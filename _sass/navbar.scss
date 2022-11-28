@@ -1,0 +1,71 @@
+#navbarLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    transition: opacity 3s ease-in-out;
+}
+
+#navbarLinks > a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    transition: color .25s ease-in-out;
+}
+
+a:hover {
+    color: var(--secondaryColor) !important;
+}
+
+#hamburgerMenu {
+    position: absolute;
+    top: 38px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#hamburgerMenu > .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color .25s ease-in-out;
+}
+
+@media (max-width: 800px) {
+    #hamburgerMenu {
+        display: flex;
+
+    }
+
+    #navbarLinks {
+        display: none;
+        visibility: hidden;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #navbarLinks > a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #navbarLinks.active {
+        display: flex;
+        visibility: visible;
+    }
+}

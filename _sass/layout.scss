@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+}
+
+#header {
+    height: fit-content;
+    width: 100vw;
+    background-color: var(--primaryColorDarker);
+    padding: 5px;
+    box-shadow: 0 -5px 20px black;
+    position: fixed;
+    z-index: 2;
+}
+
+#body {
+    position: relative;
+    top: 125px;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: calc(100vh - var(--headerHeight));
+}
+
+#content {
+    background-image: url("../images/blueBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 80vw;
+    max-width: 1400px;
+    box-shadow: 0 0 10px #5a5a5a;
+}
+
+section {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    #body {
+        top: 155px;
+        min-height: calc(100vh - 155px);
+    }
+}
