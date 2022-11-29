@@ -8,10 +8,14 @@ hamburgerMenu.addEventListener('click', () => {
     if(navbarLinks.classList.contains("active")) {
         navbarLinks.classList.remove("active");
         ChangeHamburgerMenuColor("#FFF");
+
+        header.style.height = "15vh";
     }
     else {
         navbarLinks.classList.add("active");
         ChangeHamburgerMenuColor("BBA147");
+
+        header.style.height = "fit-content";
     }
 });
 
