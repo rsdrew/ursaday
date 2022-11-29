@@ -6,7 +6,7 @@
     flex-wrap: nowrap;
     height: 100%;
     width: 100%;
-    padding: 0 20px;
+    padding: 20px;
     transition: opacity 3s ease-in-out;
 }
 
@@ -24,13 +24,13 @@ a:hover {
 
 #hamburgerMenu {
     position: absolute;
-    top: 38px;
-    right: 25px;
+    top: #{"max(4.5vh, 30px)"};
+    right: 5vw;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 30px;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -45,10 +45,9 @@ a:hover {
     transition: background-color .25s ease-in-out;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #hamburgerMenu {
         display: flex;
-
     }
 
     #navbarLinks {
@@ -56,6 +55,7 @@ a:hover {
         visibility: hidden;
         width: 100%;
         flex-direction: column;
+        padding: 10px;
     }
 
     #navbarLinks > a {

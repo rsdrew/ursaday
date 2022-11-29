@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 #socials a {
@@ -31,8 +31,8 @@
     filter: invert(65%) sepia(65%) saturate(362%) hue-rotate(9deg) brightness(87%) contrast(89%);
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #socials {
-        padding: 5px;
+        padding: 10px;
     }
 }

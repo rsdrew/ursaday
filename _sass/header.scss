@@ -1,7 +1,7 @@
 #header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 115px;
+    grid-template-rows: auto;
     grid-template-areas: 'socials smallLogo navbar';
 }
 
@@ -11,6 +11,8 @@
 
 #smallLogoWrapper {
     grid-area: smallLogo;
+    height: var(--headerHeight);
+    padding: 10px;
 }
 
 #smallLogo {
@@ -26,10 +28,10 @@ nav {
     grid-area: navbar;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #header {
         grid-template-columns: auto;
-        grid-template-rows: 115px auto auto;
+        grid-template-rows: calc(#{"max(var(--headerHeight), var(--headerMinHeight))"} * 0.7) calc(#{"max(var(--headerHeight), var(--headerMinHeight))"} * 0.3) auto;
         grid-template-areas: 'smallLogo'
                              'socials'
                              'navbar';
@@ -38,6 +40,8 @@ nav {
     #smallLogoWrapper {
         display: flex;
         justify-content: center;
+        height: calc(var(--headerHeight) * 0.7);
+        min-height: calc(var(--headerMinHeight) * 0.7);
     }
 
     #smallLogo > img {

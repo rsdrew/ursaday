@@ -3,18 +3,19 @@ body {
 }
 
 #header {
-    height: fit-content;
+    height: var(--headerHeight);
+    min-height: var(--headerMinHeight);
     width: 100vw;
     background-color: var(--primaryColorDarker);
-    padding: 5px;
     box-shadow: 0 -5px 20px black;
     position: fixed;
     z-index: 2;
+    transition: max-height 1s ease-in-out;
 }
 
 #body {
     position: relative;
-    top: 125px;
+    top: #{"max(var(--headerHeight), var(--headerMinHeight))"};
     background-color: var(--secondaryColor);
     display: flex;
     flex-direction: row;
@@ -28,9 +29,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    width: 80vw;
-    max-width: 1400px;
+    width: 100vw;
+    max-width: 1000px;
     box-shadow: 0 0 10px #5a5a5a;
+    padding: 10px;
 }
 
 section {
@@ -39,11 +41,4 @@ section {
 
 .show {
     display: block;
-}
-
-@media (max-width: 800px) {
-    #body {
-        top: 155px;
-        min-height: calc(100vh - 155px);
-    }
 }
