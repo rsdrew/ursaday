@@ -1,7 +1,9 @@
 //Have the hamberger menu show and hide the navbar.
+const header = document.getElementById("header");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 const hamburgerMenuBars = Array.from(document.querySelectorAll("#hamburgerMenu .bar"));
 const navbarLinks = document.getElementById("navbarLinks");
+
 hamburgerMenu.addEventListener('click', () => {
     if(navbarLinks.classList.contains("active")) {
         navbarLinks.classList.remove("active");
