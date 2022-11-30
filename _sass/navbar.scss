@@ -6,25 +6,28 @@
     flex-wrap: nowrap;
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 0 60px;
     transition: opacity 3s ease-in-out;
 }
 
 #navbarLinks > a {
+    font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
     padding: 0 5px;
-    transition: color .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
-a:hover {
-    color: var(--secondaryColor) !important;
+#navbarLinks > a:hover {
+    color: var(--primaryColor) !important;
+    font-size: 1.5rem !important;
 }
 
 #hamburgerMenu {
     position: absolute;
-    top: #{"max(4.5vh, 30px)"};
+    top: #{"max(6vh, 30px)"};
     right: 5vw;
     display: none;
     flex-direction: column;
@@ -51,11 +54,11 @@ a:hover {
     }
 
     #navbarLinks {
-        display: none;
-        visibility: hidden;
+        //display: none;
+        //visibility: hidden;
         width: 100%;
         flex-direction: column;
-        padding: 10px;
+        padding: 5vh 10px 20vh 10px;
     }
 
     #navbarLinks > a {

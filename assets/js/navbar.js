@@ -4,31 +4,37 @@ const hamburgerMenu = document.getElementById("hamburgerMenu");
 const hamburgerMenuBars = Array.from(document.querySelectorAll("#hamburgerMenu .bar"));
 const navbarLinks = document.getElementById("navbarLinks");
 
+const primaryColor = "#3668d3";
+const secondaryColor = "#BBA147";
+const white = "#FFF";
+
+const headerHeight = "15vh";
+
 hamburgerMenu.addEventListener('click', () => {
     if(navbarLinks.classList.contains("active")) {
         navbarLinks.classList.remove("active");
-        ChangeHamburgerMenuColor("#FFF");
+        ChangeHamburgerMenuColor(white);
 
-        header.style.height = "15vh";
+        header.style.height = headerHeight;
     }
     else {
         navbarLinks.classList.add("active");
-        ChangeHamburgerMenuColor("BBA147");
+        ChangeHamburgerMenuColor(primaryColor);
 
-        header.style.height = "fit-content";
+        header.style.height = "100vh";
     }
 });
 
 //Have the hamburger menu change color on hover.
 hamburgerMenu.addEventListener('mouseover', () => {
     if(!navbarLinks.classList.contains("active")) {
-        ChangeHamburgerMenuColor("#BBA147");
+        ChangeHamburgerMenuColor(primaryColor);
     }
 });
 
 hamburgerMenu.addEventListener('mouseleave', () => {
     if(!navbarLinks.classList.contains("active")) {
-        ChangeHamburgerMenuColor("#FFF");
+        ChangeHamburgerMenuColor(white);
     }
 });
 
@@ -40,6 +46,20 @@ if (url.length > 1) {
 }
 ChangePage(page);
 
+//Have clicking the navbar links close the navbar ddl.
+navbarLinks.addEventListener('click', () => {
+    if(window.innerWidth <= 800) {
+        header.style.height = headerHeight;
+        navbarLinks.classList.remove("active");
+    }
+});
+
+//Reset the header height when the screen is too large.
+window.onresize = function () {
+    if(window.innerWidth > 800) {
+        header.style.height = headerHeight;
+    }
+}
 
 
 function ChangePage(page) {
@@ -47,10 +67,10 @@ function ChangePage(page) {
     let nbOptions = Array.from(document.querySelectorAll("#navbarLinks > a"));
     nbOptions.forEach((nbOption, index) => {
         if(nbOption.id == `nb${page}`) {
-            nbOption.style.color = "#BBA147";
+            nbOption.style.color = primaryColor;
         }
         else {
-            nbOption.style.color = "#FFF";
+            nbOption.style.color = white;
         }
     });
 
@@ -67,7 +87,7 @@ function ChangePage(page) {
 
     //Hide the navbar drop down for smaller screens upon selection.
     navbarLinks.classList.remove("active");
-    ChangeHamburgerMenuColor("#FFF");
+    ChangeHamburgerMenuColor(white);
 }
 
 function ChangeHamburgerMenuColor(hexColorString) {

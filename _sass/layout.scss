@@ -1,38 +1,53 @@
+html {
+    // background-image: url("/assets/images/starySky.jpg");
+    // background-size: cover;
+    // background-position: bottom;
+}
+
 body {
     min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom right, rgba(2,0,36,1) 0%, rgba(54,104,211,1) 65%, rgba(0,212,255,1) 100%);
+    // background-image: url("/assets/images/starySky.jpg");
+    // background-size: cover;
+    background-color: rgba(0,0,0,0.2);
 }
 
 #header {
     height: var(--headerHeight);
     min-height: var(--headerMinHeight);
     width: 100vw;
-    background-color: var(--primaryColorDarker);
-    box-shadow: 0 -5px 20px black;
+    //background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+    //background-color: rgba(0, 0, 0, 0.2);
+    //background-color: var(--secondaryColor);
+    background: rgb(157,137,67);
+    background: linear-gradient(180deg, rgba(157,137,67,1) 0%, rgba(237,196,53,1) 50%, rgba(157,137,67,1) 100%);
+    box-shadow: 0px -2px 20px black;
     position: fixed;
     z-index: 2;
-    transition: max-height 1s ease-in-out;
+    transition: height .5s ease-in-out;
+    overflow: hidden;
 }
 
 #body {
     position: relative;
     top: #{"max(var(--headerHeight), var(--headerMinHeight))"};
-    background-color: var(--secondaryColor);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-height: calc(100vh - var(--headerHeight));
+    min-height: calc(100vh - max(var(--headerHeight), var(--headerMinHeight)));
 }
 
 #content {
-    background-image: url("../images/blueBackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     width: 100vw;
-    max-width: 1000px;
-    box-shadow: 0 0 10px #5a5a5a;
+    max-width: 1200px;
     padding: 10px;
+    display: grid;
+    justify-content: center;
 }
 
 section {
