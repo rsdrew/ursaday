@@ -1,10 +1,19 @@
 #socials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(max(var(--headerHeight), var(--headerMinHeight)) + 2vh);
+    right: 2vw;
+    height: 30vh;
+    max-height: 350px;
+    width: fit-content;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #socials a {
@@ -16,11 +25,13 @@
     width: 20px;
     height: 20px;
     fill: white;
-    transition: fill .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
 #socials svg:hover {
     fill: var(--secondaryColor);
+    transform: scale(1.5, 1.5);
+
 }
 
 .filterWhite {
@@ -29,10 +40,4 @@
 
 #socials > img:hover {
     filter: invert(65%) sepia(65%) saturate(362%) hue-rotate(9deg) brightness(87%) contrast(89%);
-}
-
-@media screen and (max-width: 800px) {
-    #socials {
-        padding: 10px;
-    }
 }
