@@ -1,33 +1,39 @@
+#navbar {
+    position: fixed;
+    font-size: .8rem;
+    width: 100vw;
+    padding: 0 5% 0 20%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    transition: height .5s ease-in-out;
+    overflow: hidden;
+}
+
 #navbarLinks {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    height: 100%;
-    width: 100%;
-    padding: 0 60px;
     transition: opacity 3s ease-in-out;
 }
 
 #navbarLinks > a {
-    font-size: 1.2rem;
-    font-weight: bold;
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
-    padding: 0 5px;
+    padding: 1.5rem 1rem;
     transition: all .25s ease-in-out;
 }
 
 #navbarLinks > a:hover {
     color: var(--primaryColor) !important;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
 }
 
 #hamburgerMenu {
     position: absolute;
-    top: #{"max(6vh, 30px)"};
+    top: #{"max(3vh, 30px)"};
     right: 5vw;
     display: none;
     flex-direction: column;
@@ -49,22 +55,32 @@
 }
 
 @media screen and (max-width: 800px) {
+    #navbar {
+        height: 0vh;
+        padding: 0;
+        font-size: 1rem;
+    }
+
     #hamburgerMenu {
         display: flex;
     }
 
     #navbarLinks {
-        //display: none;
-        //visibility: hidden;
+        display: none;
+        visibility: hidden;
+        height: 100%;
         width: 100%;
         flex-direction: column;
-        padding: 5vh 10px 20vh 10px;
+        padding: 10vh 0;
     }
 
     #navbarLinks > a {
         width: 100%;
         text-align: center;
         padding: 10px;
+        flex-grow: 1;
+        display: grid;
+        align-items: center;
     }
 
     #navbarLinks.active {

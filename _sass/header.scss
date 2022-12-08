@@ -1,15 +1,8 @@
-#header {
-    display: grid;
-    grid-template-columns: 20vw auto;
-    grid-template-rows: auto;
-    grid-template-areas: 'smallLogo navbar';
-}
-
 #smallLogoWrapper {
-    grid-area: smallLogo;
-    height: var(--headerHeight);
-    min-height: var(--headerMinHeight);
-    padding: 0 40px;
+    position: fixed;
+    top: 2rem;
+    left: 5vw;
+    z-index: 4;
 }
 
 #smallLogo {
@@ -17,20 +10,17 @@
 }
 
 #smallLogo > img {
-    height: 100%;
+    width: 8rem;
 }
 
-nav {
-    grid-area: navbar;
+#header > nav {
+    flex-grow: 1;
 }
 
 @media screen and (max-width: 800px) {
 
     #header {
-        grid-template-columns: 1fr;
-        grid-template-rows: #{"max(var(--headerHeight), var(--headerMinHeight))"};
-        grid-template-areas: 'smallLogo'
-                             'navbar';
+        flex-direction: column;
     }
 
     #smallLogoWrapper {
