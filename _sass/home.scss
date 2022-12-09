@@ -6,39 +6,32 @@
     height: 100vh;
 }
 
-#homeGrid {
-    // display: grid;
-    // grid-template-rows: 4fr 6fr;
-    // grid-template-areas: 'name'
-    //                      'news';
-    // justify-content: center;
-    // gap: 10vh;
+#homeFlex {
     text-align: center;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 80%;
+    align-items: center;
     margin: 0 auto;
+    gap: 5vh;
 }
 
-#ursaDay {
-    grid-area: name;
-    justify-self: center;
-    //align-self: end;
-    font-size: 8rem;
-    font-family: 'Zen Dots', cursive;
-    margin: 0;
-    background-image: linear-gradient(90deg, var(--primaryColor), var(--secondaryColor));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-stroke: white 1px;
+#homeFlex > * {
+    flex-grow: 1;
 }
 
-#news {
-    grid-area: news;
+#smallLogoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+#smallLogo {
+    object-fit: contain;
+}
+
+#smallLogo > img {
+    width: clamp(10rem, 50vw, 20rem);
 }
 
 #newsBackground {
@@ -47,17 +40,41 @@
     align-items: center;
     background-color: rgba(0,0,0,0.5);
     border-radius: 10px;
-    padding: 3rem;
-    width: fit-content;
+    padding-block: 3em;
+    width: clamp(300px, 80vw, 40rem);
     margin: 0 auto;
 }
 
 #newEP {
-
+    font-weight: 400;
 }
 
 #hibernation {
-    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Crimson Text', Arial, sans-serif;
+    font-size: 2rem;
     margin: 2rem 0;
     color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 800px) {
+
+    #header {
+        flex-direction: column;
+    }
+
+    #smallLogoWrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 800px) {
+    #hibernation {
+        font-size: 5rem;
+    }
+
+    #smallLogoWrapper {
+        margin-top: 4rem;
+    }
 }
