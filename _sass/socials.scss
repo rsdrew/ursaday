@@ -8,8 +8,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 2vh;
-    min-width: 350px;
-    width: 40vw;
+    width: clamp(300px, 80vw, 40rem);
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
