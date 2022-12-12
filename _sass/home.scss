@@ -34,27 +34,21 @@
     width: clamp(10rem, 50vw, 20rem);
 }
 
-#newsBackground {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    padding-block: 3em;
-    width: clamp(300px, 80vw, 40rem);
-    margin: 0 auto;
+#news > * {
+    font-size: 2vw;
 }
 
-#newEP {
-    font-weight: 400;
+#new-ep {
+    text-align: left;
 }
 
 #hibernation {
     font-weight: bold;
-    font-family: 'Crimson Text', Arial, sans-serif;
-    font-size: 2rem;
-    margin: 2rem 0;
-    color: var(--secondaryColor);
+    font-size: 10vw;
+}
+
+#coming-soon {
+    text-align: right;
 }
 
 @media screen and (max-width: 800px) {
@@ -70,11 +64,27 @@
 }
 
 @media (min-width: 800px) {
-    #hibernation {
-        font-size: 5rem;
-    }
-
     #smallLogoWrapper {
         margin-top: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #news > * {
+        font-size: 1rem;
+    }
+
+    #hibernation {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    #news > * {
+        font-size: 2rem;
+    }
+
+    #hibernation {
+        font-size: 9.375rem;
     }
 }

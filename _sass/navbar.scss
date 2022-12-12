@@ -1,9 +1,8 @@
 #navbar {
     position: fixed;
-    font-size: .8rem;
     width: 100vw;
     padding-inline: 5vw;
-    background-color: rgba(0,0,0,0.5);
+    background-color: black;
     z-index: 3;
     transition: height .5s ease-in-out;
     overflow: hidden;
@@ -23,18 +22,18 @@
 #navbarLinks > a {
     text-decoration: none;
     color: white;
-    letter-spacing: 1px;
-    padding: 1.5rem 1rem;
+    letter-spacing: 3px;
+    padding: 1rem;
     transition: all .25s ease-in-out;
 }
 
 #navbarLinks > a:hover {
-    color: var(--primaryColor) !important;
-    font-size: 1rem !important;
+    color: var(--primary-color) !important;
+    font-size: 1.2rem !important;
 }
 
 #hamburgerMenu {
-    position: absolute;
+    position: fixed;
     top: #{"max(3vh, 30px)"};
     right: 5vw;
     display: none;
@@ -43,6 +42,7 @@
     width: 40px;
     height: 30px;
     border: none;
+    z-index: 4;
     background: transparent;
     cursor: pointer;
 }

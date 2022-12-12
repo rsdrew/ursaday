@@ -5,22 +5,30 @@
 }
 
 :root {
-  --primaryColor: #3668D3;
-  --primaryColorDarker: #2E57B2;
-  --secondaryColor: #BBA147;
-  --headerHeight: 15vh;
-  --headerPadding: 1vh;
-  --headerMinHeight: 100px;
+  --primary-color: #3668D3;
+  --primary-color-darker: #060e1e;
+  --secondary-color: #BBA147;
+  --blue-frosted-glass-background-color: rgba(6, 14, 30, 0.5);
+  --yellow-frosted-glass-background-color: rgba(187, 161, 71, 0.5);
 }
 
 html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   //font-family: 'Crimson Text', Arial, sans-serif;
   font-size: 16px;
-  // font-weight: 400;
-  // line-height: 1.75;
+  font-weight: 400;
+  line-height: 1.75;
   color: white;
   scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 h1 {
@@ -42,20 +50,85 @@ small, .text_small {font-size: 0.8rem;}
 
 .grey {color: grey;}
 
-.subText {
+.sub-text {
+  font-weight: 300;
   font-style: italic;
   color: grey;
-  font-size: 0.8rem;
 }
 
-p {margin-bottom: 1rem;}
+.serif-font {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: .1ch;
+}
+
+.show {
+  display: block;
+}
 
 .hidden {
   display: none;
 }
 
-.frostedGlass {
+.black-frosted-glass {
   backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blue-frosted-glass {
+  backdrop-filter: blur(5px);
+  background-color: var(--blue-frosted-glass-background-color);
+}
+
+.yellow-frosted-glass {
+  backdrop-filter: blur(5px);
+  background-color: var(--yellow-frosted-glass-background-color);
+}
+
+.section-container {
+  padding: 5vh 4vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.shadow {
+  box-shadow: 0 0 20px 3px black;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.regular-font {
+  font-weight: 400;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
 }
 
 // scroll bar
@@ -67,7 +140,7 @@ p {margin-bottom: 1rem;}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondaryColor);
+  background-color: var(--secondary-color);
   transition: all .5s ease-in-out;
 }
 

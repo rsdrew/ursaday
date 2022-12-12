@@ -1,0 +1,24 @@
+- name: Ryan Haley
+  instrument: "Vocals/Guitar"
+  about: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit laudantium fugit autem at, quas voluptate ad fuga porro alias corporis veniam necessitatibus exercitationem! Aspernatur, aliquam eum exercitationem tenetur, hic repellendus doloribus porro repudiandae libero, vitae reprehenderit. Obcaecati corporis nihil delectus voluptatum odio aspernatur illo, praesentium qui, excepturi consectetur tempore?
+  picture-filename: blank-profile-picture.png
+
+- name: Joey Serra
+  instrument: Guitar
+  about: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum aliquam, consequatur illo unde tempora earum! Quod repudiandae distinctio adipisci ab laboriosam similique delectus iste veniam aliquam dolores placeat harum est aliquid, eius voluptatibus magnam? Odio suscipit et labore dolorum sapiente minus reiciendis explicabo, pariatur dolore vel iure, commodi minima!
+  picture-filename: blank-profile-picture.png
+
+- name: Matt Drew
+  instrument: Guitar
+  about: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eius, itaque harum, consequuntur ipsam optio dolor nesciunt debitis recusandae eos minima quisquam, eaque necessitatibus officia quo pariatur est corporis. Iste unde architecto quam nostrum. Repudiandae in soluta ab provident eos praesentium, consequuntur totam facere reiciendis saepe, rerum optio cum tempora.
+  picture-filename: blank-profile-picture.png
+
+- name: Ryan Drew
+  instrument: Bass
+  about: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quibusdam consequuntur sit ut sapiente dolores! A velit nisi amet eaque vero maiores repudiandae ad asperiores corporis, consequuntur quisquam facilis, reprehenderit inventore minus ipsum omnis? Quidem amet nisi nostrum expedita, libero quas eaque, rem velit, maiores quia saepe eius voluptas illum?
+  picture-filename: blank-profile-picture.png
+
+- name: Coramc Egan
+  instrument: Drums
+  about: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae debitis sit deleniti cumque sapiente perspiciatis voluptas. Dolorem animi ut, perspiciatis cupiditate perferendis dolorum voluptatum nulla odio suscipit facilis culpa ratione qui asperiores magnam possimus eum iure. Magnam, quod eligendi animi quam id, quasi placeat quae voluptate asperiores deserunt, qui dicta.
+  picture-filename: blank-profile-picture.png

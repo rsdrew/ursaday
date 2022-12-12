@@ -1,9 +1,41 @@
 #about {
-    height: 900px;
     background-color: black;
     box-shadow: 0 0 20px 3px black;
     position: relative;
     z-index: 2;
-    display: grid;
-    justify-content: center;
+}
+
+#band-about {
+    margin-bottom: 5rem;
+    width: 75%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+#band-members-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem 1.5rem;
+}
+
+.band-member {
+    width: 21rem;
+}
+
+.band-member-picture {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.band-member-name {
+    font-size: 2.5rem;
+}
+
+.band-member-name-and-instrument {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-block: .5rem;
 }
