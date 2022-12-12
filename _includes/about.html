@@ -1,3 +1,18 @@
-<section id="about">
-    <h2>Meet the Band</h2>
+<section id="about" class="section-padding">
+    <div class="section-container">
+        <h2 class="section-header serif-font"><span class="light-font">Meet </span><span class="bold-font primary-color">Ursa Day</span></h2>
+        <p id="band-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolores facere repellat quasi, voluptatum, iusto neque vel commodi ut nemo assumenda unde perferendis est expedita! Eius repellat ut saepe quidem?</p>
+        <div id="band-members-container">
+            {% for member in site.data.band-members %}
+                <div class="band-member">
+                    <img src="/assets/images/{{ member.picture-filename }}" alt="Image of band member" class="band-member-picture">
+                    <div class="band-member-name-and-instrument">
+                        <h3 class="band-member-name serif-font">{{ member.name }}</h3>
+                        <p class="sub-text">{{ member.instrument }}</p>
+                    </div>
+                    <p class="band-member-about">{{ member.about }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>

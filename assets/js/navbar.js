@@ -66,7 +66,7 @@ window.onresize = function () {
 //     let nbOptions = Array.from(document.querySelectorAll("#navbarLinks > a"));
 //     nbOptions.forEach((nbOption, index) => {
 //         if(nbOption.id == `nb${page}`) {
-//             nbOption.style.color = primaryColor;
+//             nbOption.style.color = primary-color;
 //         }
 //         else {
 //             nbOption.style.color = white;

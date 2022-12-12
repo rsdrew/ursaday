@@ -10,9 +10,9 @@
     bottom: 2vh;
     width: clamp(300px, 80vw, 40rem);
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px;
+    background-color: var(--secondary-color);
 }
 
 #socials a {
@@ -28,7 +28,7 @@
 }
 
 #socials svg:hover {
-    fill: var(--secondaryColor);
+    fill: var(--primary-color);
     transform: scale(1.5, 1.5);
 
 }
