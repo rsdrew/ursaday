@@ -12,7 +12,7 @@
     z-index: 3;
     border-radius: 10px;
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 #socials a {
@@ -28,7 +28,7 @@
 }
 
 #socials svg:hover {
-    fill: var(--primary-color);
+    fill: var(--secondary-color);
     transform: scale(1.5, 1.5);
 
 }
