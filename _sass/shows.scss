@@ -1,4 +1,17 @@
 #shows {
-    height: 900px;
     background-color: black;
+}
+
+#shows-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#shows-table td {
+    padding: 1rem;
+    border-bottom: solid white 1px;
+}
+
+#shows-table tr:last-child td {
+    border-bottom: none;
 }

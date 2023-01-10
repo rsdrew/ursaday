@@ -21,17 +21,17 @@
     flex-grow: 1;
 }
 
-#smallLogoWrapper {
+#logo-wrapper {
     display: flex;
     align-items: center;
 }
 
-#smallLogo {
+#logo {
     object-fit: contain;
 }
 
-#smallLogo > img {
-    width: clamp(10rem, 50vw, 20rem);
+#logo > img {
+    width: clamp(15rem, 50vw, 25rem);
 }
 
 #news > * {
@@ -44,7 +44,7 @@
     text-align: left;
 }
 
-#hibernation {
+#ep-name {
     font-weight: bold;
     font-size: 10vw;
 }
@@ -76,7 +76,7 @@
         font-size: 1rem;
     }
 
-    #hibernation {
+    #ep-name {
         font-size: 3rem;
     }
 }
@@ -86,7 +86,7 @@
         font-size: 2rem;
     }
 
-    #hibernation {
+    #ep-name {
         font-size: 9.375rem;
     }
 }

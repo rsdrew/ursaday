@@ -44,6 +44,30 @@ h4 {font-size: 1.563rem;}
 
 h5 {font-size: 1.25rem;}
 
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: .4ch;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+button:hover:enabled {
+  color: var(--primary-color);
+  border: solid var(--primary-color) 2px;
+}
+
+button:disabled {
+  cursor: default;
+  background-color: #141414;
+  color: grey;
+}
+
 small, .text_small {font-size: 0.8rem;}
 
 .italics {font-style: italic;}

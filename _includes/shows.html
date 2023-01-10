@@ -1,3 +1,22 @@
 {% include section-start.html name="shows" header-white="Come see us" header-primary="Live" %}
-
+<table id="shows-table">
+    <tbody>
+    {% for show in site.data.shows %}
+        <tr class="show-row">
+            <td>
+                <h3 class="primary-color bold-font">{{ show.location }}</h3>
+                <p class="thin-font sub-text">{{ show.address }}</p>
+            </td>
+            <td style="text-align: right;">
+                <h4 class="show-date">{{ show.date | date: '%A, %B %-d, %Y' }}</h4>
+            </td>
+            <td style="text-align: right;">
+                <a href="{{ show.tickets-link }}" target="_blank">
+                    <button class="show-tickets" {% if show.passed %} disabled {% endif %}>TICKETS</button>
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
 {% include section-end.html %}

@@ -1,5 +1,6 @@
 #music {
-    background-image: url("/assets/images/20211123224359_IMG_3158.jpg");
+    // background-image: url("/assets/images/20211123224359_IMG_3158.jpg");
+    background-color: #141414;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -27,10 +28,9 @@
     margin: 25px;
     height: 250px;
     width: 250px;
-    background-image: URL("https://source.unsplash.com/Qrspubmx6kE/640x360");
+    background-image: URL("/assets/images/habitatCoverArt.jpg");
     background-size: cover;
     background-position: center;
-    border-radius: 15%;
 }
 
 .now-playing {

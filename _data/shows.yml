@@ -1,0 +1,25 @@
+# NOTE THAT EACH DATE MUST FOLLOW THE FORMAT OF DD/MM/YYYY, NOT MM/DD/YYYY
+
+- location: TBD
+  address: TBD
+  date: TBD
+  tickets-link: ''
+  passed: false
+
+- location: New Dodge Lounge
+  address: 8850 Joseph Campau St, Hamtramck, MI
+  date: 23/11/2022
+  tickets-link: ''
+  passed: true
+
+- location: ASWD Block Party
+  address: 5110 Bellevue St, Detroit, MI
+  date: 3/9/2022
+  tickets-link: ''
+  passed: true
+
+- location: New Dodge Lounge
+  address: 8850 Joseph Campau St, Hamtramck, MI
+  date: 27/5/2022
+  tickets-link: ''
+  passed: true
