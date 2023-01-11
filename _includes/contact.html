@@ -1,3 +1,19 @@
 {% include section-start.html name="contact" header-white="Send us a" header-primary="Message" %}
-
+<form id="contact-form" action="https://formspree.io/f/mnqyqrbk" method="POST">
+    <div id="email-wrapper">
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Email" required
+            oninvalid="this.setCustomValidity('Please enter your email address.')"
+            oninput="this.setCustomValidity('')"
+        >
+    </div>
+    <div id="message-wrapper">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Let us know where we should play next!" required
+            oninvalid="this.setCustomValidity(`Don't forget to send us a message!`)"
+            oninput="this.setCustomValidity('')"
+        ></textarea>
+    </div>
+    <input id="send-message" type="submit" value="Send" />
+</form>
 {% include section-end.html %}

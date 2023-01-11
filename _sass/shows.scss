@@ -1,4 +1,67 @@
 #shows {
-    height: 900px;
     background-color: black;
+}
+
+#shows-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#shows-table td {
+    padding: 1rem;
+    border-bottom: solid white 1px;
+}
+
+#shows-table tr:last-child td {
+    border-bottom: none;
+}
+
+.show {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: solid white 1px;
+}
+
+.show:last-child {
+    border: none;
+}
+
+.show > * {
+    padding: 2rem 1rem;
+}
+
+.show-date, .show-tickets {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+    .show {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding-block: 2rem;
+        text-align: center;
+    }
+
+    .show > * {
+        padding: 0;
+    }
+
+    .show-location {
+        font-size: 2rem;
+    }
+
+    .show-date, .show-tickets {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .show-tickets > a {
+        width: 100%;
+    }
 }
