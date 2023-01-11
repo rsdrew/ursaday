@@ -1,4 +1,50 @@
 #contact {
     background-color: rgb(53, 53, 53);
-    height: 900px;
+}
+
+#contact-form label {
+    font-size: 2rem;
+}
+
+#contact-form input, #contact-form textarea {
+    font-size: 1.5rem;
+}
+
+#email-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+#email {
+    height: 3rem;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#message-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+#message {
+    height: 6rem;
+    border-radius: 10px;
+    padding: 10px;
+    resize: vertical;
+}
+
+@media (max-width: 800px) {
+    #email-wrapper {
+        width: 100%;
+    }
+
+    #send-message {
+        margin-bottom: 2rem;
+    }
 }

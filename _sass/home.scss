@@ -23,7 +23,7 @@
 
 #logo-wrapper {
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 
 #logo {
@@ -31,7 +31,7 @@
 }
 
 #logo > img {
-    width: clamp(15rem, 50vw, 25rem);
+    width: clamp(20rem, 60vw, 30rem);
 }
 
 #news > * {
