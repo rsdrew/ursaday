@@ -75,7 +75,6 @@ function playPauseTrack() {
 }
 
 function playTrack() {
-    curr_track.pause();
     curr_track.play();
     isPlaying = true;
 
