@@ -1,5 +1,7 @@
 #contact {
-    background-color: rgb(53, 53, 53);
+    background-image: url(/assets/images/live2.jpg);
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 #contact-form label {
@@ -39,12 +41,12 @@
     resize: vertical;
 }
 
+#send-message {
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 800px) {
     #email-wrapper {
         width: 100%;
-    }
-
-    #send-message {
-        margin-bottom: 2rem;
     }
 }
