@@ -1,10 +1,6 @@
 #music {
-    // background-image: url("/assets/images/20211123224359_IMG_3158.jpg");
     background-color: black;
     box-shadow: 0 0 20px 3px black;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     display: grid;
     justify-content: center;
@@ -79,7 +75,7 @@
     -moz-appearance: none;
     appearance: none;
     height: 5px;
-    background: black;
+    background: grey;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;

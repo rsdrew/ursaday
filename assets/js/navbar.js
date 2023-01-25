@@ -13,7 +13,7 @@ hamburgerMenu.addEventListener('click', () => {
         navbarLinks.classList.remove("active");
         ChangeHamburgerMenuColor(white);
 
-        navbar.style.height = "0vh";
+        navbar.style.height = "10vh";
     }
     else {
         navbarLinks.classList.add("active");
