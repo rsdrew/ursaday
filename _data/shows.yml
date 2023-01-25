@@ -1,10 +1,10 @@
 # NOTE THAT EACH DATE MUST FOLLOW THE FORMAT OF DD/MM/YYYY, NOT MM/DD/YYYY
 
-- location: TBD
-  address: TBD
-  date: TBD
-  tickets-link: ''
-  passed: false
+# - location: TBD
+#   address: TBD
+#   date: TBD
+#   tickets-link: ''
+#   passed: false
 
 - location: New Dodge Lounge
   address: 8850 Joseph Campau St, Hamtramck, MI

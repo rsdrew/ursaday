@@ -74,8 +74,9 @@ button:hover:enabled, input[type=submit]:hover:enabled {
 
 button:disabled, input[type=submit]:disabled {
   cursor: default;
-  background-color: #141414;
+  background-color: #242424;
   color: grey;
+  cursor: not-allowed;
 }
 
 textarea {
@@ -191,6 +192,11 @@ p {
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.darken-image {
+  background-color: rgba(0,0,0,0.4);
+  min-height: inherit;
 }
 
 // scroll bar

@@ -3,6 +3,7 @@
     width: 100vw;
     padding-inline: 5vw;
     background-color: black;
+    box-shadow: 0 0 20px 3px black;
     z-index: 3;
     transition: height .5s ease-in-out;
     overflow: hidden;
@@ -34,7 +35,7 @@
 
 #hamburgerMenu {
     position: fixed;
-    top: #{"max(3vh, 30px)"};
+    top: 25px;
     right: 5vw;
     display: none;
     flex-direction: column;
@@ -58,7 +59,7 @@
 
 @media screen and (max-width: 800px) {
     #navbar {
-        height: 0vh;
+        height: 80px;
         padding: 0;
         font-size: 1rem;
     }

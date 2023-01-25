@@ -1,7 +1,11 @@
 #contact {
-    background-image: url(/assets/images/live2.jpg);
-    background-size: contain;
-    background-attachment: fixed;
+    background-color: black;
+    box-shadow: 0 0 20px 3px black;
+
+    // Will add this back in when the About section is ready.
+    // background-image: url(/assets/images/live2.jpg);
+    // background-size: contain;
+    // background-attachment: fixed;
 }
 
 #contact-form label {
