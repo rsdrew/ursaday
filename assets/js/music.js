@@ -25,14 +25,14 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks to be played.
 let track_list = [
     {
-        name: 'Stellars Jay',
-        image: '/assets/images/habitatCoverArt.jpg',
-        path: '/assets/music/stellars-jay.mp3'
-    },
-    {
         name: 'Morning Light',
         image: '/assets/images/habitatCoverArt.jpg',
         path: '/assets/music/morning-light.mp3'
+    },
+    {
+        name: 'Stellars Jay',
+        image: '/assets/images/habitatCoverArt.jpg',
+        path: '/assets/music/stellars-jay.mp3'
     },
     {
         name: 'Embers',
