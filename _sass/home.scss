@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-#homeFlex {
+#home-flex {
     text-align: center;
     height: 100%;
     display: flex;
@@ -14,11 +14,11 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    padding-block: 2rem;
+    padding: 2rem 4vw;
     gap: 2rem;
 }
 
-#homeFlex > * {
+#home-flex > * {
     flex-grow: 1;
 }
 

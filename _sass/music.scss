@@ -1,5 +1,6 @@
 #music {
-    background-color: black;
+    //background-color: var(--dark-background-color);
+    background-image: linear-gradient(to bottom right, #060606, #141414);
     box-shadow: 0 0 20px 3px black;
     width: 100%;
     display: grid;
