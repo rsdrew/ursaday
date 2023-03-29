@@ -21,7 +21,7 @@ html {
 }
 
 html, input {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 input, textarea {
@@ -58,18 +58,13 @@ button, input[type=submit] {
   width: 10rem;
   height: 4rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: bold;
   letter-spacing: .4ch;
   font-size: 1rem;
   cursor: pointer;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .2s;
   text-transform: uppercase;
-}
-
-button:hover:enabled, input[type=submit]:hover:enabled {
-  color: var(--primary-color);
-  border: solid var(--primary-color) 4px;
 }
 
 button:disabled, input[type=submit]:disabled {
@@ -95,8 +90,17 @@ small, .text_small {font-size: 0.8rem;}
   color: grey;
 }
 
-.serif-font {
-  font-family: 'Roboto Slab', serif;
+.header-font {
+  font-family: 'Yanone Kaffeesatz', serif;
+}
+
+.sub-header-font {
+  font-family: 'Raleway', sans-serif;
+  font-variant: small-caps;
+}
+
+.paragraph-font {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 p {
@@ -195,8 +199,17 @@ p {
 }
 
 .darken-image {
-  background-color: rgba(0,0,0,0.4);
+  background: linear-gradient(90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
   min-height: inherit;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--secondary-color);
 }
 
 // scroll bar

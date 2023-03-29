@@ -3,12 +3,17 @@
   <span class="bar"></span>
   <span class="bar"></span>
 </button>
-<nav id="navbar" class="shadow">
-  <div id="navbarLinks">
-    <a id="nbhome" href="#home" onclick="ChangePage('home')">HOME</a>
+<nav id="navbar">
+  <div id="logo">
+    <img src="/assets/images/walkingBearWhiteSvg.svg" />
+  </div>
+  <div id="navbarLinks" class="header-font">
+    <a id="nbabout" href="#about" onclick="ChangePage('about')">ABOUT</a>
     <a id="nbmusic" href="#music" onclick="ChangePage('music')">MUSIC</a>
+    <a id="nbphotos" href="#photos" onclick="ChangePage('photos')">PHOTOS</a>
     <a id="nbshows" href="#shows" onclick="ChangePage('shows')">SHOWS</a>
-    <!-- <a id="nbabout" href="#about" onclick="ChangePage('about')">ABOUT</a> -->
-    <a id="nbcontact" href="#contact" onclick="ChangePage('contact')">CONTACT</a>
+    <a id="nbcontact" href="#contact" onclick="ChangePage('contact')">
+      <button id="btn-contact" class="btn-primary header-font">CONTACT</button>
+    </a>
   </div>
 </nav>
