@@ -6,6 +6,27 @@
     min-height: 100vh;
 }
 
+#hero {
+    padding-top: 25vh;
+    min-height: 100vh;
+    max-width: #{"min(60%, 700px)"};
+    margin-left: 0;
+}
+
+#logo-text {
+    height: 200px;
+    width: auto;
+    margin-bottom: 4rem;
+}
+
+#news {
+    margin-bottom: 4rem;
+}
+
+#btn-listen-now {
+    padding: 1rem 6rem;
+}
+
 @media screen and (max-width: 800px) {
 
 }

@@ -2,6 +2,7 @@
     position: fixed;
     width: 100vw;
     padding: 25px;
+    min-height: 100px;
     background: linear-gradient(180deg, rgba(18, 31, 61, 0.8) 0%, rgba(18, 31, 61, 0) 100%);
     z-index: 3;
     transition: height .5s ease-in-out;
@@ -47,7 +48,7 @@
 
 #hamburgerMenu {
     position: fixed;
-    top: 25px;
+    top: 30px;
     right: 5vw;
     display: none;
     flex-direction: column;
@@ -70,10 +71,28 @@
 }
 
 #btn-contact {
+    padding: 0;
     width: 200px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#btn-contact:hover {
+    background-color: white;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 800px) {
+
+    #navbar {
+        display: block;
+    }
+
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 5vw;
+    }
 
     #hamburgerMenu {
         display: flex;
@@ -100,5 +119,9 @@
     #navbarLinks.active {
         display: flex;
         visibility: visible;
+    }
+
+    #btn-contact {
+        width: 100%;
     }
 }

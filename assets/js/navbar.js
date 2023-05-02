@@ -13,20 +13,22 @@ hamburgerMenu.addEventListener('click', () => {
         navbarLinks.classList.remove("active");
         ChangeHamburgerMenuColor(white);
 
-        navbar.style.height = "80px";
+        navbar.style.height = "100px";
+        navbar.style.background = "";
     }
     else {
         navbarLinks.classList.add("active");
-        ChangeHamburgerMenuColor(primaryColor);
+        ChangeHamburgerMenuColor(secondaryColor);
 
         navbar.style.height = "100vh";
+        navbar.style.background = "rgba(54, 104, 211, 0.2)";
     }
 });
 
 //Have the hamburger menu change color on hover.
 hamburgerMenu.addEventListener('mouseover', () => {
     if(!navbarLinks.classList.contains("active")) {
-        ChangeHamburgerMenuColor(primaryColor);
+        ChangeHamburgerMenuColor(secondaryColor);
     }
 });
 

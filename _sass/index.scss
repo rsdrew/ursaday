@@ -34,7 +34,10 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', serif;
   font-weight: 400;
+  letter-spacing: .2ch;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -53,22 +56,29 @@ h5 {font-size: 1.25rem;}
 h6 {font-size: 1rem;}
 
 button, input[type=submit] {
-  background-color: var(--secondary-color);
-  color: white;
-  width: 10rem;
+  font-family: 'Yanone Kaffeesatz', serif;
   height: 4rem;
-  border: none;
+  background: none;
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
   border-radius: 5px;
+  padding: 1rem 5rem;
   font-weight: bold;
-  letter-spacing: .4ch;
+  letter-spacing: .4rem;
   font-size: 1rem;
   cursor: pointer;
   transition: all ease-in-out .2s;
   text-transform: uppercase;
 }
 
+button:hover, input[type=submit]:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
 button:disabled, input[type=submit]:disabled {
   cursor: default;
+  border: none;
   background-color: #242424;
   color: grey;
   cursor: not-allowed;
@@ -97,6 +107,9 @@ small, .text_small {font-size: 0.8rem;}
 .sub-header-font {
   font-family: 'Raleway', sans-serif;
   font-variant: small-caps;
+  letter-spacing: .5ch;
+  line-height: 40px;
+  font-size: 20px;
 }
 
 .paragraph-font {
@@ -201,15 +214,6 @@ p {
 .darken-image {
   background: linear-gradient(90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
   min-height: inherit;
-}
-
-.btn-primary {
-  background-color: var(--secondary-color);
-}
-
-.btn-primary:hover {
-  background-color: white;
-  color: var(--secondary-color);
 }
 
 // scroll bar
