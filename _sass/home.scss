@@ -9,18 +9,18 @@
 #hero {
     padding-top: 25vh;
     min-height: 100vh;
-    max-width: #{"min(60%, 700px)"};
-    margin-left: 0;
 }
 
 #logo-text {
-    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
     width: auto;
     margin-bottom: 4rem;
 }
 
 #news {
     margin-bottom: 4rem;
+    max-width: 50%;
 }
 
 #btn-listen-now {
@@ -28,7 +28,13 @@
 }
 
 @media screen and (max-width: 800px) {
+    #news {
+        max-width: 100%;
+    }
 
+    #btn-listen-now {
+        padding: 1rem 0rem;
+    }
 }
 
 @media (min-width: 800px) {

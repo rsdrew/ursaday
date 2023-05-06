@@ -21,7 +21,7 @@ hamburgerMenu.addEventListener('click', () => {
         ChangeHamburgerMenuColor(secondaryColor);
 
         navbar.style.height = "100vh";
-        navbar.style.background = "rgba(54, 104, 211, 0.2)";
+        navbar.style.background = "rgba(14, 21, 36)";
     }
 });
 
