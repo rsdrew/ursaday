@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script type="text/javascript" src="/assets/js/navbar.js" defer></script>
     <script type="text/javascript" src="/assets/js/music.js" defer></script>
+    <script>
+      const mailerlite_api_key = '{{ site.MAILERLITE_API_KEY }}';
+      const mailerlite_group_id = '{{ site.MAILERLITE_GROUP_ID }}';
+    </script>
+    <!-- <script type="text/javascript" src="/assets/js/mailing-list.js" defer></script> -->
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v08a893c96141fbc55feeeeac1fda7508" type="text/javascript"></script>
+    <script>fetch("https://assets.mailerlite.com/jsonp/364298/forms/82585114963346564/track-view")</script>
     <!-- MailerLite Universal -->
     <script>
       (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
@@ -35,6 +42,7 @@
     {% include navbar.html %}
     <div id="content">
       {% include home.html %}
+      {% include mailing-list.html %}
       {% include music.html %}
       {% include shows.html %}
       <!-- {% include about.html %} -->

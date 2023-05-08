@@ -1,0 +1,34 @@
+{% include section-start.html name="mailing-list" header="STAY UP TO DATE" %}
+    <!-- This specific id and class are NEEDED for the form to work properly -->
+    <div id="mlb2-4008849" class="ml-subscribe-form">
+        <p id="mailing-list-sub-header">Be the first to know when we drop new music or have a show</p>
+        <form id="mailing-list-form" class="ml-block-form" action="https://assets.mailerlite.com/jsonp/364298/forms/82585114963346564/subscribe" data-code="" method="post" target="_blank">
+            <div id="mailing-list-input-wrapper" class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                <input id="email-input" type="email" required data-inputmask="" name="fields[email]" placeholder="EMAIL" autocomplete="email">
+                <div id="mailing-list-subscribe-wrapper">
+                    <button type="submit" class="primary">SUBSCRIBE</button>
+                    <button disabled="disabled" style="display: none;" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                    </button>
+                </div>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+        </form>
+        <div id="mailing-list-success" style="display: none;">
+            <p>You're in! We hope to see you at the next show!</p>
+        </div>
+    </div>
+{% include section-end.html %}
+  
+<script>
+    function ml_webform_success_4008849() {
+        var $ = ml_jQuery || jQuery;
+        $('#mailing-list-success').show();
+        $('#mailing-list-form').hide();
+    }
+</script>
+  
+  
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v08a893c96141fbc55feeeeac1fda7508" type="text/javascript"></script>
+<script>fetch("https://assets.mailerlite.com/jsonp/364298/forms/82585114963346564/track-view")</script>

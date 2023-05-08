@@ -2,14 +2,16 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  transition: opacity 1s ease-in-out, min-height 1s ease-in-out;
 }
 
 :root {
-  --primary-color: #3668D3;
+  --primary-color: #0e1524;
   --primary-color-darker: #060e1e;
   --secondary-color: #BBA147;
   --blue-frosted-glass-background-color: rgba(6, 14, 30, 0.5);
   --yellow-frosted-glass-background-color: rgba(187, 161, 71, 0.5);
+  --border-radius: 5px;
 }
 
 html {
@@ -18,6 +20,7 @@ html {
   line-height: 1.75;
   color: white;
   scroll-behavior: smooth;
+  letter-spacing: .25ch;
 }
 
 html, input {
@@ -26,6 +29,8 @@ html, input {
 
 input, textarea {
   border: none;
+  font-size: 1rem;
+  letter-spacing: .2ch;
 }
 
 img {
@@ -38,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   letter-spacing: .2ch;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h1 {
@@ -45,24 +51,32 @@ h1 {
   font-size: 3.052rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {
+  font-size: 3.157rem;
+  line-height: 60px;
+}
 
-h3 {font-size: 1.953rem;}
+h3 {font-size: 2.369rem;}
 
-h4 {font-size: 1.563rem;}
+h4 {font-size: 1.777rem;}
 
-h5 {font-size: 1.25rem;}
+h5 {font-size: 1.333rem;}
 
-h6 {font-size: 1rem;}
+p {
+  font-weight: 300;
+  letter-spacing: .2ch;
+  line-height: 30px;
+}
 
 button, input[type=submit] {
   font-family: 'Yanone Kaffeesatz', serif;
   height: 4rem;
+  width: 100%;
   background: none;
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);
   border-radius: 5px;
-  padding: 1rem 5rem;
+  padding-block: 1rem;
   font-weight: bold;
   letter-spacing: .4rem;
   font-size: 1rem;
@@ -116,17 +130,13 @@ small, .text_small {font-size: 0.8rem;}
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-p {
-  font-weight: 300;
-  letter-spacing: .1ch;
-}
-
 .show {
   display: block;
 }
 
 .hidden {
   display: none;
+  opacity: 0;
 }
 
 .black-frosted-glass {
@@ -151,10 +161,9 @@ p {
 }
 
 .section-header {
-  font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: .5em;
+  margin-bottom: 2rem;
 }
 
 .shadow {
@@ -235,23 +244,23 @@ p {
 }
 
 @media (max-width: 800px) {
-  h1 {
-    margin-top: 0;
-    font-size: 2.488rem;
-  }
+  // h1 {
+  //   margin-top: 0;
+  //   font-size: 2.488rem;
+  // }
   
-  h2 {font-size: 2.074rem;}
+  // h2 {font-size: 2.074rem;}
   
-  h3 {font-size: 1.728rem;}
+  // h3 {font-size: 1.728rem;}
   
-  h4 {font-size: 1.44rem;}
+  // h4 {font-size: 1.44rem;}
   
-  h5 {font-size: 1.2rem;}
+  // h5 {font-size: 1.2rem;}
 
-  h6 {font-size: 1rem;}
+  // h6 {font-size: 1rem;}
 
-  .section-header {
-    font-size: 4rem;
+  .darken-image {
+    background: rgba(0,0,0,0.7);
   }
 
   button, input[type=submit] {

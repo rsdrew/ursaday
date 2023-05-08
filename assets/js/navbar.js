@@ -4,7 +4,7 @@ const hamburgerMenu = document.getElementById("hamburgerMenu");
 const hamburgerMenuBars = Array.from(document.querySelectorAll("#hamburgerMenu .bar"));
 const navbarLinks = document.getElementById("navbarLinks");
 
-const primaryColor = "#3668d3";
+const primaryColor = "#0e1524";
 const secondaryColor = "#BBA147";
 const white = "#FFF";
 

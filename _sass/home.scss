@@ -3,12 +3,12 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 93vh;
 }
 
 #hero {
     padding-top: 25vh;
-    min-height: 100vh;
+    min-height: 93vh;
 }
 
 #logo-text {
@@ -25,6 +25,7 @@
 
 #btn-listen-now {
     padding: 1rem 6rem;
+    width: auto;
 }
 
 @media screen and (max-width: 800px) {

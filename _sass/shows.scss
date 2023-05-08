@@ -41,6 +41,10 @@
     text-align: right;
 }
 
+.show-tickets * {
+    width: 100%;
+}
+
 @media screen and (max-width: 800px) {
     .show {
         display: flex;

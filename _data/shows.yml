@@ -8,9 +8,15 @@
 
 - location: The Loving Touch
   address: 22634 Woodward Ave, Ferndale, MI 48220
+  date: 24/06/2023
+  tickets-link: 'https://www.ticketweb.com/event/the-fruits-jonpaul-wallace-ursa-the-loving-touch-tickets/13083795?pl=lovingtouch'
+  passed: false
+
+- location: The Loving Touch
+  address: 22634 Woodward Ave, Ferndale, MI 48220
   date: 05/05/2023
   tickets-link: 'https://www.ticketweb.com/event/saving-throw-so-called-ghost-the-loving-touch-tickets/13070875?pl=lovingtouch&fbclid=IwAR1Bwg_kTO63pcQ4ILOYeJegunXhiAinXoKdN1SizmkVQvZijqHywKl5obA'
-  passed: false
+  passed: true
 
 - location: The Sanctuary
   address: 2932 Caniff St, Hamtramck, MI 48212
