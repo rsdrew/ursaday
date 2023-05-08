@@ -1,5 +1,5 @@
-{% include section-start.html name="shows" header-white="Come see us" header-primary="Live" darken-image=true %}
-    {% for show in site.data.shows %}
+{% include section-start.html name="shows" header="See Us In Action" darken-image=true %}
+    {% for show in site.data.shows limit:5 %}
     <div class="show">
         <div>
             <h3 class="show-location bold-font">{{ show.location }}</h3>
@@ -10,9 +10,11 @@
         </div>
         <div class="show-tickets">
             <a href="{{ show.tickets-link }}" target="_blank">
-                <button {% if show.passed %} disabled {% endif %}>TICKETS</button>
+                <button class="ticket-button" data-show-date="{{ show.date | date: '%m/%d/%Y' }}">TICKETS</button>
             </a>
         </div>
     </div>
     {% endfor %}
 {% include section-end.html %}
+
+<!-- {% if {{show.passed}} %} disabled {% endif %} -->

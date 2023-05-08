@@ -1,15 +1,19 @@
 #about {
-    background-color: black;
-    box-shadow: 0 0 20px 3px black;
+    background-image: url(/assets/images/live1.jpg);
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     z-index: 2;
 }
 
-#band-about {
-    margin-bottom: 5rem;
-    width: 75%;
-    margin-inline: auto;
-    text-align: center;
+#about .section-header {
+    text-align: left;
+}
+
+#about .section-header, #band-about {
+    width: 50%;
+    margin-left: auto;
 }
 
 #band-members-container {

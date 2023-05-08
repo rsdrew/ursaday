@@ -1,3 +1,5 @@
+let musicSection = document.getElementById('music');
+
 // Select all the elements in the HTML page
 // and assign them to a variable
 let now_playing = document.querySelector(".now-playing");
@@ -25,6 +27,11 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks to be played.
 let track_list = [
     {
+        name: 'Have At It',
+        image: '/assets/images/haveAtItCoverArt.jpg',
+        path: '/assets/music/have-at-it.mp3'
+    },
+    {
         name: 'Morning Light',
         image: '/assets/images/habitatCoverArt.jpg',
         path: '/assets/music/morning-light.mp3'
@@ -49,6 +56,9 @@ function loadTrack(track_index) {
     // Load a new track
     curr_track.src = track_list[track_index].path;
     curr_track.load();
+
+    // Update background image of Music section
+    musicSection.style.backgroundImage = "url(" + track_list[track_index].image + ")";
 
     // Update details of the track
     track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";

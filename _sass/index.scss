@@ -41,8 +41,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', serif;
   font-weight: 400;
-  letter-spacing: .2ch;
-  text-transform: uppercase;
+  letter-spacing: .3ch;
   margin: 0;
 }
 
@@ -64,8 +63,8 @@ h5 {font-size: 1.333rem;}
 
 p {
   font-weight: 300;
-  letter-spacing: .2ch;
-  line-height: 30px;
+  letter-spacing: .35ch;
+  line-height: 35px;
 }
 
 button, input[type=submit] {
@@ -91,12 +90,14 @@ button:hover, input[type=submit]:hover {
 }
 
 button:disabled, input[type=submit]:disabled {
-  cursor: default;
-  border: none;
-  background-color: #242424;
+  border-color: grey;
   color: grey;
   cursor: not-allowed;
 }
+
+button:disabled:hover, input[type=submit]:disabled:hover {
+  background-color: transparent;
+} 
 
 textarea {
   font-family: inherit;
@@ -164,6 +165,7 @@ small, .text_small {font-size: 0.8rem;}
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .shadow {
@@ -220,9 +222,20 @@ small, .text_small {font-size: 0.8rem;}
   justify-content: space-between;
 }
 
-.darken-image {
-  background: linear-gradient(90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
+.darken-image, .darken-image-left, .darken-image-right {
   min-height: inherit;
+}
+
+.darken-image {
+  background: rgba(0,0,0,0.8);
+}
+
+.darken-image-left {
+  background: linear-gradient(90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
+}
+
+.darken-image-right {
+  background: linear-gradient(-90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
 }
 
 // scroll bar
@@ -259,7 +272,7 @@ small, .text_small {font-size: 0.8rem;}
 
   // h6 {font-size: 1rem;}
 
-  .darken-image {
+  .darken-image-left, .darken-image-right {
     background: rgba(0,0,0,0.7);
   }
 

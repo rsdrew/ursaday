@@ -1,10 +1,7 @@
 #music {
-    //background-color: var(--dark-background-color);
-    background-image: linear-gradient(to bottom right, #060606, #141414);
+    background-position: center;
+    background-size: cover;
     box-shadow: 0 0 20px 3px black;
-    width: 100%;
-    display: grid;
-    justify-content: center;
 }
 
 .player {
@@ -38,6 +35,7 @@
 .track-name {
     font-size: 3rem;
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 .track-artist {

@@ -15,11 +15,12 @@
     <meta name="theme-color" content="#3668d3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script type="text/javascript" src="/assets/js/navbar.js" defer></script>
     <script type="text/javascript" src="/assets/js/music.js" defer></script>
+    <script type="text/javascript" src="/assets/js/shows.js" defer></script>
     <script>
       const mailerlite_api_key = '{{ site.MAILERLITE_API_KEY }}';
       const mailerlite_group_id = '{{ site.MAILERLITE_GROUP_ID }}';
@@ -43,9 +44,9 @@
     <div id="content">
       {% include home.html %}
       {% include mailing-list.html %}
+      {% include about.html %}
       {% include music.html %}
       {% include shows.html %}
-      <!-- {% include about.html %} -->
       {% include contact.html %}
     </div>
   </body>
