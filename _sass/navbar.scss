@@ -1,12 +1,25 @@
 #navbar {
     position: fixed;
     width: 100vw;
-    padding-inline: 5vw;
-    background-image: linear-gradient(to bottom right, #060606, #141414);
-    box-shadow: 0 0 20px 3px black;
+    padding:  10px 25px;
+    min-height: 80px;
+    box-shadow: 0 5px 10px black;
+    background: var(--primary-color-gradient-semi-transparent);
     z-index: 3;
     transition: height .5s ease-in-out;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+#logo * {
+    height: inherit;
 }
 
 #navbarLinks {
@@ -15,27 +28,28 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    max-width: 70rem;
-    margin: 0 auto;
+    min-width: 70vw;
     transition: opacity 3s ease-in-out;
 }
 
 #navbarLinks > a {
     text-decoration: none;
     color: white;
-    letter-spacing: 3px;
-    padding: 1rem;
-    transition: all .25s ease-in-out;
+    letter-spacing: 0.4rem;
+    transition: all .2s ease-in-out;
+}
+
+#navbarLinks > a * {
+    letter-spacing: 0.4rem;
 }
 
 #navbarLinks > a:hover {
-    color: var(--primary-color) !important;
-    font-size: 1.2rem !important;
+    color: var(--secondary-color) !important;
 }
 
 #hamburgerMenu {
     position: fixed;
-    top: 25px;
+    top: 30px;
     right: 5vw;
     display: none;
     flex-direction: column;
@@ -46,6 +60,7 @@
     z-index: 4;
     background: transparent;
     cursor: pointer;
+    padding: 0;
 }
 
 #hamburgerMenu > .bar {
@@ -57,11 +72,29 @@
     transition: background-color .25s ease-in-out;
 }
 
+#btn-contact {
+    padding: 0;
+    width: 200px;
+    height: 3rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#btn-contact:hover {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
 @media screen and (max-width: 800px) {
+
     #navbar {
-        height: 80px;
-        padding: 0;
-        font-size: 1rem;
+        display: block;
+    }
+
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 5vw;
     }
 
     #hamburgerMenu {
@@ -89,5 +122,9 @@
     #navbarLinks.active {
         display: flex;
         visibility: visible;
+    }
+
+    #btn-contact {
+        width: 100%;
     }
 }

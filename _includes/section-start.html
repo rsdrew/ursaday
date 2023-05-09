@@ -1,6 +1,4 @@
 <section id="{{ include.name }}">
-    <div class="{% if include.darken-image %} darken-image {% endif %}">
+    <div class="{% if include.darken-image %} darken-image {% endif %} {% if include.darken-image-left %} darken-image-left {% endif %} {% if include.darken-image-right %} darken-image-right {% endif %}">
         <div class="section-container">
-            <h2 class="section-header serif-font">
-                <span class="thin-font">{{ include.header-white }} </span><span class="bold-font primary-color">{{ include.header-primary }}</span>
-            </h2>
+            <h2 class="section-header serif-font">{{ include.header}}</h2>

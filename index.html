@@ -13,12 +13,21 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bba147">
     <meta name="msapplication-TileColor" content="#3668d3">
     <meta name="theme-color" content="#3668d3">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script type="text/javascript" src="/assets/js/navbar.js" defer></script>
     <script type="text/javascript" src="/assets/js/music.js" defer></script>
+    <script type="text/javascript" src="/assets/js/shows.js" defer></script>
+    <script>
+      const mailerlite_api_key = '{{ site.MAILERLITE_API_KEY }}';
+      const mailerlite_group_id = '{{ site.MAILERLITE_GROUP_ID }}';
+    </script>
+    <!-- <script type="text/javascript" src="/assets/js/mailing-list.js" defer></script> -->
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v08a893c96141fbc55feeeeac1fda7508" type="text/javascript"></script>
+    <script>fetch("https://assets.mailerlite.com/jsonp/364298/forms/82585114963346564/track-view")</script>
     <!-- MailerLite Universal -->
     <script>
       (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
@@ -32,12 +41,12 @@
   </head>
   <body>
     {% include navbar.html %}
-    {% include socials.html %}
     <div id="content">
       {% include home.html %}
+      {% include mailing-list.html %}
+      {% include about.html %}
       {% include music.html %}
       {% include shows.html %}
-      <!-- {% include about.html %} -->
       {% include contact.html %}
     </div>
   </body>

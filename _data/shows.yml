@@ -8,30 +8,30 @@
 
 - location: The Loving Touch
   address: 22634 Woodward Ave, Ferndale, MI 48220
+  date: 24/06/2023
+  tickets-link: 'https://www.ticketweb.com/event/the-fruits-jonpaul-wallace-ursa-the-loving-touch-tickets/13083795?pl=lovingtouch'
+
+- location: The Loving Touch
+  address: 22634 Woodward Ave, Ferndale, MI 48220
   date: 05/05/2023
   tickets-link: 'https://www.ticketweb.com/event/saving-throw-so-called-ghost-the-loving-touch-tickets/13070875?pl=lovingtouch&fbclid=IwAR1Bwg_kTO63pcQ4ILOYeJegunXhiAinXoKdN1SizmkVQvZijqHywKl5obA'
-  passed: false
 
 - location: The Sanctuary
   address: 2932 Caniff St, Hamtramck, MI 48212
   date: 26/02/2023
   tickets-link: 'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.ticketweb.com%2Fevent%2Fwinter-meltdown-the-sanctuary-detroit-tickets%2F12898395%3Fpl%3Dsanctuary%26fbclid%3DIwAR1py3PpjooiEWIejbZJoLY4v9xZjcWEe5yhMmKonCYD_E-GBsUhWEYzViQ&h=AT1KauaUQBjr4ZuuujrmjH6BD4s1F1VNvXl6TxKAkpk_turNbmQ3TKkqEvu5kEIOnBoWCH3oKKJMOzrgzMTfYfCvTM1r3YKJRbDYIWL-njzt8vn4Gwi2lW46nnxGRxCx7pew5dSTBBNG0-a8F8va&__tn__=-UK-R&c[0]=AT1BlKGNwOpERqXARHHuXbvAQFla-VE1Ep9aKScWsbvej4L_I-4rBCfL8cwqu_rWFpkfdUw5FJeY38ksPmrQ8kdW7715hlgaCCQ48F2IVmawitaZW3QYaQQ0BbeNrFBWEo0KBOgNUsTKXR7AJmhk3Uy-SOccD26b6DgjYY7k7b9B5xJ7X7BT7PgVqUWdfRx4EvfsY_9lSCqc'
-  passed: true
 
 - location: New Dodge Lounge
   address: 8850 Joseph Campau St, Hamtramck, MI 48212
   date: 23/11/2022
   tickets-link: ''
-  passed: true
 
 - location: ASWD Block Party
   address: 5110 Bellevue St, Detroit, MI 48211
   date: 3/9/2022
   tickets-link: ''
-  passed: true
 
 - location: New Dodge Lounge
   address: 8850 Joseph Campau St, Hamtramck, MI 48212
   date: 27/5/2022
   tickets-link: ''
-  passed: true

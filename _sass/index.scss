@@ -2,14 +2,15 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  transition: opacity 1s ease-in-out, min-height 1s ease-in-out;
 }
 
 :root {
-  --primary-color: #3668D3;
-  --primary-color-darker: #060e1e;
+  --primary-color: #0e1524;
+  --primary-color-gradient: linear-gradient(91.44deg, rgb(13, 21, 38) 0%, rgb(7, 11, 19) 100%);
+  --primary-color-gradient-semi-transparent: linear-gradient(91.44deg, rgba(13, 21, 38, 0.9) 0%, rgba(7, 11, 19, 0.9) 100%);
   --secondary-color: #BBA147;
-  --blue-frosted-glass-background-color: rgba(6, 14, 30, 0.5);
-  --yellow-frosted-glass-background-color: rgba(187, 161, 71, 0.5);
+  --border-radius: 5px;
 }
 
 html {
@@ -18,14 +19,23 @@ html {
   line-height: 1.75;
   color: white;
   scroll-behavior: smooth;
+  letter-spacing: .25ch;
 }
 
 html, input {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 input, textarea {
-  border: none;
+  padding: 20px;
+  font-size: 1rem;
+  letter-spacing: .2ch;
+  border-radius: var(--border-radius);
+}
+
+textarea {
+  height: 6rem;
+  resize: vertical;
 }
 
 img {
@@ -34,7 +44,10 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', serif;
   font-weight: 400;
+  letter-spacing: .3ch;
+  margin: 0;
 }
 
 h1 {
@@ -42,45 +55,61 @@ h1 {
   font-size: 3.052rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {
+  font-size: 3.157rem;
+  line-height: 60px;
+}
 
-h3 {font-size: 1.953rem;}
+h3 {font-size: 2.369rem;}
 
-h4 {font-size: 1.563rem;}
+h4 {font-size: 1.777rem;}
 
-h5 {font-size: 1.25rem;}
+h5 {font-size: 1.333rem;}
 
-h6 {font-size: 1rem;}
+p {
+  font-weight: 300;
+  letter-spacing: .35ch;
+  line-height: 35px;
+}
 
 button, input[type=submit] {
-  background-color: var(--secondary-color);
-  color: white;
-  width: 10rem;
+  font-family: 'Yanone Kaffeesatz', serif;
   height: 4rem;
-  border: none;
-  border-radius: 10px;
+  width: 100%;
+  background: none;
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 5px;
+  padding-block: 1rem;
   font-weight: bold;
-  letter-spacing: .4ch;
+  letter-spacing: .4rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .2s;
   text-transform: uppercase;
 }
 
-button:hover:enabled, input[type=submit]:hover:enabled {
-  color: var(--primary-color);
-  border: solid var(--primary-color) 4px;
+button:hover, input[type=submit]:hover {
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 button:disabled, input[type=submit]:disabled {
-  cursor: default;
-  background-color: #242424;
+  border-color: grey;
   color: grey;
   cursor: not-allowed;
 }
 
+button:disabled:hover, input[type=submit]:disabled:hover {
+  background-color: transparent;
+} 
+
 textarea {
   font-family: inherit;
+}
+
+section {
+  scroll-margin-top: 80px;
 }
 
 small, .text_small {font-size: 0.8rem;}
@@ -95,13 +124,20 @@ small, .text_small {font-size: 0.8rem;}
   color: grey;
 }
 
-.serif-font {
-  font-family: 'Roboto Slab', serif;
+.header-font {
+  font-family: 'Yanone Kaffeesatz', serif;
 }
 
-p {
-  font-weight: 300;
-  letter-spacing: .1ch;
+.sub-header-font {
+  font-family: 'Raleway', sans-serif;
+  font-variant: small-caps;
+  letter-spacing: .5ch;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.paragraph-font {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .show {
@@ -110,6 +146,7 @@ p {
 
 .hidden {
   display: none;
+  opacity: 0;
 }
 
 .black-frosted-glass {
@@ -128,16 +165,16 @@ p {
 }
 
 .section-container {
-  padding: 5vh 4vw;
-  max-width: 1400px;
+  padding: 100px 7vw;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .section-header {
-  font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: .5em;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .shadow {
@@ -194,9 +231,20 @@ p {
   justify-content: space-between;
 }
 
-.darken-image {
-  background-color: rgba(0,0,0,0.4);
+.darken-image, .darken-image-left, .darken-image-right {
   min-height: inherit;
+}
+
+.darken-image {
+  background: rgba(0,0,0,0.8);
+}
+
+.darken-image-left {
+  background: linear-gradient(90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
+}
+
+.darken-image-right {
+  background: linear-gradient(-90deg, #000000 2.96%, rgba(0, 0, 0, 0.772914) 56.77%, rgba(0, 0, 0, 0) 100%);
 }
 
 // scroll bar
@@ -218,23 +266,23 @@ p {
 }
 
 @media (max-width: 800px) {
-  h1 {
-    margin-top: 0;
-    font-size: 2.488rem;
-  }
+  // h1 {
+  //   margin-top: 0;
+  //   font-size: 2.488rem;
+  // }
   
-  h2 {font-size: 2.074rem;}
+  // h2 {font-size: 2.074rem;}
   
-  h3 {font-size: 1.728rem;}
+  // h3 {font-size: 1.728rem;}
   
-  h4 {font-size: 1.44rem;}
+  // h4 {font-size: 1.44rem;}
   
-  h5 {font-size: 1.2rem;}
+  // h5 {font-size: 1.2rem;}
 
-  h6 {font-size: 1rem;}
+  // h6 {font-size: 1rem;}
 
-  .section-header {
-    font-size: 4rem;
+  .darken-image-left, .darken-image-right {
+    background: rgba(0,0,0,0.7);
   }
 
   button, input[type=submit] {

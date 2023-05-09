@@ -4,7 +4,7 @@ const hamburgerMenu = document.getElementById("hamburgerMenu");
 const hamburgerMenuBars = Array.from(document.querySelectorAll("#hamburgerMenu .bar"));
 const navbarLinks = document.getElementById("navbarLinks");
 
-const primaryColor = "#3668d3";
+const primaryColor = "#0e1524";
 const secondaryColor = "#BBA147";
 const white = "#FFF";
 
@@ -13,20 +13,22 @@ hamburgerMenu.addEventListener('click', () => {
         navbarLinks.classList.remove("active");
         ChangeHamburgerMenuColor(white);
 
-        navbar.style.height = "80px";
+        navbar.style.height = "100px";
+        navbar.style.background = "";
     }
     else {
         navbarLinks.classList.add("active");
-        ChangeHamburgerMenuColor(primaryColor);
+        ChangeHamburgerMenuColor(secondaryColor);
 
         navbar.style.height = "100vh";
+        navbar.style.background = "rgba(14, 21, 36)";
     }
 });
 
 //Have the hamburger menu change color on hover.
 hamburgerMenu.addEventListener('mouseover', () => {
     if(!navbarLinks.classList.contains("active")) {
-        ChangeHamburgerMenuColor(primaryColor);
+        ChangeHamburgerMenuColor(secondaryColor);
     }
 });
 
