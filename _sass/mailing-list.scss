@@ -1,10 +1,18 @@
 #mailing-list {
-    background: linear-gradient(91.44deg, #0D1526 0%, #070B13 100%);
+    background: var(--primary-color-gradient);
+}
+
+#mailing-list .section-container {
+    padding: 50px 7vw;
+}
+
+#mailing-list .section-header {
+    margin-bottom: 1rem;
 }
 
 #mailing-list-sub-header {
     max-width: 490px;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 3rem auto;
     text-align: center;
 }
 
@@ -27,8 +35,6 @@
 
 #email-input {
     grid-area: input;
-    border-radius: var(--border-radius);
-    padding: 20px;
 }
 
 #subscribe {

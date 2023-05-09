@@ -1,6 +1,6 @@
 #about {
     background-image: url(/assets/images/live1.jpg);
-    background-position: right;
+    background-position: top left;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -9,11 +9,17 @@
 
 #about .section-header {
     text-align: left;
+    margin-bottom: 0;
 }
 
 #about .section-header, #band-about {
-    width: 50%;
+    width: 45%;
     margin-left: auto;
+}
+
+#band-about {
+    padding-block: 60px;
+    line-height: 40px;
 }
 
 #band-members-container {
@@ -42,4 +48,14 @@
     justify-content: space-between;
     align-items: baseline;
     margin-block: .5rem;
+}
+
+@media screen and (max-width: 800px) {
+    #about .section-header {
+        text-align: center;
+    }
+
+    #about .section-header, #band-about {
+        width: 100%;
+    }
 }

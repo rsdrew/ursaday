@@ -1,9 +1,10 @@
 #navbar {
     position: fixed;
     width: 100vw;
-    padding: 25px;
-    min-height: 100px;
-    background: linear-gradient(180deg, rgba(18, 31, 61, 0.8) 0%, rgba(18, 31, 61, 0) 100%);
+    padding:  10px 25px;
+    min-height: 80px;
+    box-shadow: 0 5px 10px black;
+    background: var(--primary-color-gradient-semi-transparent);
     z-index: 3;
     transition: height .5s ease-in-out;
     overflow: hidden;
@@ -74,6 +75,7 @@
 #btn-contact {
     padding: 0;
     width: 200px;
+    height: 3rem;
     background-color: var(--secondary-color);
     color: white;
 }

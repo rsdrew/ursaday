@@ -7,10 +7,9 @@
 
 :root {
   --primary-color: #0e1524;
-  --primary-color-darker: #060e1e;
+  --primary-color-gradient: linear-gradient(91.44deg, rgb(13, 21, 38) 0%, rgb(7, 11, 19) 100%);
+  --primary-color-gradient-semi-transparent: linear-gradient(91.44deg, rgba(13, 21, 38, 0.9) 0%, rgba(7, 11, 19, 0.9) 100%);
   --secondary-color: #BBA147;
-  --blue-frosted-glass-background-color: rgba(6, 14, 30, 0.5);
-  --yellow-frosted-glass-background-color: rgba(187, 161, 71, 0.5);
   --border-radius: 5px;
 }
 
@@ -28,9 +27,15 @@ html, input {
 }
 
 input, textarea {
-  border: none;
+  padding: 20px;
   font-size: 1rem;
   letter-spacing: .2ch;
+  border-radius: var(--border-radius);
+}
+
+textarea {
+  height: 6rem;
+  resize: vertical;
 }
 
 img {
@@ -103,6 +108,10 @@ textarea {
   font-family: inherit;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 small, .text_small {font-size: 0.8rem;}
 
 .italics {font-style: italic;}
@@ -156,7 +165,7 @@ small, .text_small {font-size: 0.8rem;}
 }
 
 .section-container {
-  padding: 5vh 7vw;
+  padding: 100px 7vw;
   max-width: 1600px;
   margin: 0 auto;
 }
