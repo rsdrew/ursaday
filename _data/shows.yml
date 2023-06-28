@@ -4,7 +4,11 @@
 #   address: TBD
 #   date: TBD
 #   tickets-link: ''
-#   passed: false
+
+- location: Lager House
+  address: 1254 Michigan Ave, Detroit, MI 48226
+  date: 02/09/2023
+  tickets-link: 'https://www.ticketweb.com/event/ursa-day-routine-fuss-saving-lager-house-tickets/13326008?pl=kickstand'
 
 - location: The Loving Touch
   address: 22634 Woodward Ave, Ferndale, MI 48220
