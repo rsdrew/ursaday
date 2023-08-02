@@ -1,0 +1,58 @@
+#footer {
+    background-color: #111111;
+    padding: 2rem 2rem;
+}
+
+#footer__logo {
+    height: 4.5rem;
+    padding-block: .5rem;
+    align-self: flex-start;
+}
+
+#footer__email {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-icon {
+    height: 2rem;
+    fill: white;
+    transition: fill .2s ease-in-out;
+}
+
+.social-media-icon:hover {
+    height: 2rem;
+    fill: var(--secondary-color);
+}
+
+.mailing-list-input-wrapper__input,
+.mailing-list-subscribe-wrapper__button {
+    height: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #footer {
+        padding-inline: 7vw;
+    }
+
+    #footer__logo,
+    #footer__email,
+    #footer__subscribe {
+        margin-inline: auto;
+    }
+
+    #footer__form {
+        margin: 0;
+    }
+
+    #footer__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    #footer__grid > * {
+        max-width: 100%;
+      }
+}
