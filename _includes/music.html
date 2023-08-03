@@ -1,33 +1,33 @@
 {% include section-start.html name="music" header="Give Us A Listen" darken-image="true" %}
     <div class="player">
         <div class="details">
-            <div class="now-playing"></div>
-            <div class="track-art"></div>
-            <div class="track-name"></div>
+            <div class="now-playing slide-in"></div>
+            <div class="track-art slide-in"></div>
+            <div class="track-name slide-in"></div>
         </div>
 
         <div class="buttons">
             <div class="prev-track" onclick="prevTrack()">
-                <i class="fa fa-step-backward fa-2x"></i>
+                <i class="fa fa-step-backward fa-2x slide-in"></i>
             </div>
             <div class="playpause-track" onclick="playPauseTrack()">
-                <i class="fa fa-play-circle fa-5x"></i>
+                <i class="fa fa-play-circle fa-5x slide-in"></i>
             </div>
             <div class="next-track" onclick="nextTrack()">
-                <i class="fa fa-step-forward fa-2x"></i>
+                <i class="fa fa-step-forward fa-2x slide-in"></i>
             </div>
         </div>
 
         <div class="slider-container">
-            <div class="current-time">0:00</div>
-            <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
-            <div class="total-duration">0:00</div>
+            <div class="current-time slide-in">0:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek-slider slide-in" onchange="seekTo()">
+            <div class="total-duration slide-in">0:00</div>
         </div>
 
         <div class="slider-container">
-            <i class="fa fa-volume-down"></i>
-            <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setVolume()">
-            <i class="fa fa-volume-up"></i>
+            <i class="fa fa-volume-down slide-in"></i>
+            <input type="range" min="1" max="100" value="99" class="volume-slider slide-in" onchange="setVolume()">
+            <i class="fa fa-volume-up slide-in"></i>
         </div>
     </div>
 {% include section-end.html %}

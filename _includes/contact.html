@@ -1,20 +1,20 @@
 {% include section-start.html name="contact" header="Have Questions?" %}
-<p id="contact-sub-header">Want us to play near you? Want a physical ticket to the show? Let us know.</p>
+<p id="contact-sub-header" class="slide-in">Want us to play near you? Want a physical ticket to the show? Let us know.</p>
 <form id="contact-form" action="https://formspree.io/f/mnqyqrbk" method="POST">
     <div id="email-wrapper">
-        <label for="email" class="sub-header-font">Email</label>
-        <input id="email" type="email" name="email" required
+        <label for="email" class="sub-header-font slide-in">Email</label>
+        <input id="email" class="slide-in" type="email" name="email" required
             oninvalid="this.setCustomValidity('Please enter your email address.')"
             oninput="this.setCustomValidity('')"
         >
     </div>
     <div id="message-wrapper">
-        <label for="message" class="sub-header-font">Message</label>
-        <textarea id="message" name="message" required
+        <label for="message" class="sub-header-font slide-in">Message</label>
+        <textarea id="message" class="slide-in" name="message" required
             oninvalid="this.setCustomValidity(`Don't forget to send us a message!`)"
             oninput="this.setCustomValidity('')"
         ></textarea>
     </div>
-    <input id="send-message" type="submit" value="Send" />
+    <input id="send-message" class="slide-in" type="submit" value="Send" />
 </form>
 {% include section-end.html %}
