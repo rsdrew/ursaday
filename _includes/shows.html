@@ -2,15 +2,15 @@
     {% for show in site.data.shows limit:5 %}
     <div class="show">
         <div>
-            <h3 class="show-location bold-font">{{ show.location }}</h3>
-            <p class="show-address thin-font sub-text">{{ show.address }}</p>
+            <h3 class="show-location bold-font slide-in">{{ show.location }}</h3>
+            <p class="show-address thin-font sub-text slide-in">{{ show.address }}</p>
         </div>
         <div class="show-date">
-            <h4 class="thin-font">{{ show.date | date: '%A, %B %-d, %Y' }}</h4>
+            <h4 class="thin-font slide-in">{{ show.date | date: '%A, %B %-d, %Y' }}</h4>
         </div>
         <div class="show-tickets">
             <a href="{{ show.tickets-link }}" target="_blank">
-                <button class="ticket-button" data-show-date="{{ show.date | date: '%m/%d/%Y' }}">TICKETS</button>
+                <button class="ticket-button slide-in" data-show-date="{{ show.date | date: '%m/%d/%Y' }}">TICKETS</button>
             </a>
         </div>
     </div>

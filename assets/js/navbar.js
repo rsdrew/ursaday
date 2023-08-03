@@ -1,6 +1,24 @@
+// Have scrolling show/hide the navbar
+const navbar = document.querySelector('#navbar');
+const hamburgerMenu = document.querySelector('#hamburgerMenu');
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        // Going down
+        navbar.classList.add('navbar--hidden');
+        hamburgerMenu.classList.add('navbar--hidden');
+    }
+    else {
+        // Going up
+        navbar.classList.remove('navbar--hidden');
+        hamburgerMenu.classList.remove('navbar--hidden');
+    }
+
+    lastScrollY = window.scrollY;
+})
+
 //Have the hamberger menu show and hide the navbar.
-const navbar = document.getElementById("navbar");
-const hamburgerMenu = document.getElementById("hamburgerMenu");
 const hamburgerMenuBars = Array.from(document.querySelectorAll("#hamburgerMenu .bar"));
 const navbarLinks = document.getElementById("navbarLinks");
 
@@ -38,14 +56,6 @@ hamburgerMenu.addEventListener('mouseleave', () => {
     }
 });
 
-//Get the page the user is going to.
-// const url = window.location.href.split('#');
-// let page = "home";
-// if (url.length > 1) {
-//     page = url[1];
-// }
-// ChangePage(page);
-
 //Have clicking the navbar links close the navbar ddl.
 navbarLinks.addEventListener('click', () => {
     if(window.innerWidth <= 800) {
@@ -61,35 +71,6 @@ window.onresize = function () {
         navbarLinks.classList.remove("active");
     }
 }
-
-
-// function ChangePage(page) {
-//     //Highlight the navbar element for the current page.
-//     let nbOptions = Array.from(document.querySelectorAll("#navbarLinks > a"));
-//     nbOptions.forEach((nbOption, index) => {
-//         if(nbOption.id == `nb${page}`) {
-//             nbOption.style.color = primary-color;
-//         }
-//         else {
-//             nbOption.style.color = white;
-//         }
-//     });
-
-//     //Show the content of the current page.
-//     let sections = Array.from(document.getElementsByTagName("section"));
-//     sections.forEach((section, index) => {
-//         if(section.id == page) {
-//             section.classList.add("show");
-//         }
-//         else {
-//             section.classList.remove("show");
-//         }
-//     });
-
-//     //Hide the navbar drop down for smaller screens upon selection.
-//     navbarLinks.classList.remove("active");
-//     ChangeHamburgerMenuColor(white);
-// }
 
 function ChangeHamburgerMenuColor(hexColorString) {
     hamburgerMenuBars.forEach((bar, index) => {
