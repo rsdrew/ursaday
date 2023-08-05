@@ -27,7 +27,7 @@ html, input {
 }
 
 input, textarea {
-  padding: 20px;
+  padding: 12px;
   font-size: 1rem;
   letter-spacing: .2ch;
   border-radius: var(--border-radius);
@@ -100,7 +100,7 @@ button, input[type=submit] {
   letter-spacing: .4rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: all ease-in-out .2s;
+  transition: background-color ease-in-out .2s, color ease-in-out .2s;
   text-transform: uppercase;
 }
 
@@ -117,7 +117,11 @@ button:disabled, input[type=submit]:disabled {
 
 button:disabled:hover, input[type=submit]:disabled:hover {
   background-color: transparent;
-} 
+}
+
+button.slide-in, input[type=submit].slide-in {
+  transition: background-color ease-in-out .2s, color ease-in-out .2s, transform 1s, opacity 1s !important;
+}
 
 textarea {
   font-family: inherit;
