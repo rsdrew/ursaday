@@ -41,15 +41,19 @@
     <title>Ursa Day</title>
   </head>
   <body>
-    {% include navbar.html %}
-    <div id="content">
+    <header>
+      {% include navbar.html %}
+    </header>
+    <main id="content">
       {% include home.html %}
       {% include mailing-list.html %}
       {% include about.html %}
       {% include music.html %}
       {% include shows.html %}
       {% include contact.html %}
+    </main>
+    <footer>
       {% include footer.html %}
-    </div>
+    </footer>
   </body>
 </html>
