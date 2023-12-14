@@ -30,6 +30,7 @@
     background-image: URL("/assets/images/habitatCoverArt.jpg");
     background-size: cover;
     background-position: center;
+    border-radius: var(--border-radius);
 }
 
 .now-playing {

@@ -27,6 +27,11 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks to be played.
 let track_list = [
     {
+        name: 'Shout It Aloud',
+        image: '/assets/images/shoutItAloudCoverArt.jpg',
+        path: '/assets/music/shout-it-aloud.mp3'
+    },
+    {
         name: 'Have At It',
         image: '/assets/images/haveAtItCoverArt.jpg',
         path: '/assets/music/have-at-it.mp3'
