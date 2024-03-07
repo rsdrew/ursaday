@@ -27,9 +27,34 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks to be played.
 let track_list = [
     {
+        name: 'El Oso',
+        image: '/assets/images/hyperphagiaCoverArt.jpg',
+        path: '/assets/music/el-oso.mp3'
+    },
+    {
+        name: 'Unclear',
+        image: '/assets/images/hyperphagiaCoverArt.jpg',
+        path: '/assets/music/unclear.mp3'
+    },
+    {
         name: 'Shout It Aloud',
-        image: '/assets/images/shoutItAloudCoverArt.jpg',
+        image: '/assets/images/hyperphagiaCoverArt.jpg',
         path: '/assets/music/shout-it-aloud.mp3'
+    },
+    {
+        name: 'Thunder',
+        image: '/assets/images/hyperphagiaCoverArt.jpg',
+        path: '/assets/music/thunder.mp3'
+    },
+    {
+        name: 'Walk Alone',
+        image: '/assets/images/hyperphagiaCoverArt.jpg',
+        path: '/assets/music/walk-alone.mp3'
+    },
+    {
+        name: 'Push and Pull',
+        image: '/assets/images/hyperphagiaCoverArt.jpg',
+        path: '/assets/music/push-and-pull.mp3'
     },
     {
         name: 'Have At It',

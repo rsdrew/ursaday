@@ -2,6 +2,16 @@
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 20px 3px black;
+
+    .social-media-icon {
+        height: 4rem;
+    }
+}
+
+#music-section-music-icons {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .player {
