@@ -10,5 +10,9 @@
     margin-inline: auto;
     border-radius: var(--border-radius);
     overflow: hidden;
+
+    & > * {
+      max-width: 100%;
+    }
   }
 }
