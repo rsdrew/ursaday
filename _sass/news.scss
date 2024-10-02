@@ -1,0 +1,13 @@
+#news {
+  background-image: url("/assets/images/bandPic.webp");
+  background-size: cover;
+  
+
+
+  #news-wrapper {
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+}
