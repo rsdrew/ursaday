@@ -3,15 +3,19 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.3.0)
+    bigdecimal (3.2.2)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
+    csv (3.3.5)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.16.3-x64-mingw-ucrt)
+    ffi (1.17.2-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
-    google-protobuf (4.26.0-x64-mingw-ucrt)
+    google-protobuf (4.31.1-x64-mingw-ucrt)
+      bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
     i18n (1.14.4)
@@ -32,8 +36,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-redirect-from (0.16.0)
-      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-watch (2.2.1)
@@ -68,8 +70,9 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  base64
+  csv
   jekyll
-  jekyll-redirect-from
   webrick (~> 1.7)
 
 BUNDLED WITH
